@@ -4,3 +4,106 @@ such that when they are added to the webpage
 they will be styled appropriately already,
 for the most part. */
 
+/* DEFAULT FOR ALL CONTENT */
+*{
+margin: 0;
+padding: 0;
+list-style: none;
+text-decoration: none;
+font-family: Verdana, Helvetica, Arial;
+text-align: center;
+
+}
+
+/* TITLE */
+.title {
+font-size: 60px;
+display: inline-block;
+text-align: center;
+position: relative;
+color:rgb(204, 226, 248);
+
+}
+
+.title::before, .title::after  {
+content: "";
+height: 100%;
+position:absolute;
+}
+
+.title::before {
+    background-color:rgb(86, 107, 128);
+    z-index: -1;
+    left: -25px;
+    right: -25px;
+}
+
+.title::after{
+    width:100vw;
+    background-color:rgb(54, 67, 80);
+    left:50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: -2;
+}
+
+/* BODY */
+body {
+    background-color:rgb(110, 132, 154);
+    color:rgb(54, 67, 80);
+}
+
+/* NAVIGATION TABS */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:rgb(86, 107, 128);
+    color:rgb(54, 67, 80);
+    padding:5px;
+}
+
+.navbar *{
+    flex:auto;
+    max-width: 180px;
+    margin:5px;
+    font-size: 25px;
+}
+
+/* NAVIGATION BAR */
+div.navbar *{
+    color:rgb(54, 67, 80);
+    align-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-image: radial-gradient(rgb(204, 226, 248),rgb(110, 132, 154));
+    width:fit-content;
+    height:fit-content;
+    border-style: solid;
+    border-color: rgb(204, 226, 248);
+    border-radius: 20px;
+}
+
+div.navbar *:hover {
+color:rgb(204, 226, 248);
+-webkit-transform: scale(1.1); 
+}
+
+/* HOME PAGE FLEXBOX */
+
+.homeflex-container {
+    background-color: red;
+    margin: 5px;
+}
+
+.homeflex {
+    background-color: blue;
+    margin:5px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:auto;
+    flex: auto; 
+}

@@ -6,3 +6,6 @@ This webpage will be expanding on the lessons learnt over the last few months. T
 - Buttons and input fields
 - Responsive to different screen sizes
 - Use of grid/flex boxes to hold content
+- Use of Hover effects
+- Use of css pseudo-elements
+- Experiment with clickable icons
