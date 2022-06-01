@@ -1,1 +1,8 @@
 # SecondWebpage
+This webpage will be expanding on the lessons learnt over the last few months. The first webpage was very basic and was more to experiment with some simple techniques. Features intended to be added on this page: 
+- More clean and professional visually
+- Tidy title bar
+- Navigation tabs
+- Buttons and input fields
+- Responsive to different screen sizes
+- Use of grid/flex boxes to hold content
