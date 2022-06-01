@@ -15,6 +15,10 @@ text-align: center;
 
 }
 
+a {
+    color: none;
+}
+
 /* TITLE */
 .title {
 font-size: 60px;
@@ -53,25 +57,26 @@ body {
     color:rgb(54, 67, 80);
 }
 
-/* NAVIGATION TABS */
+/* NAVIGATION BAR */
+nav {
+    padding:5px;
+    background-color:rgb(86, 107, 128);
+    height: 60px;
+
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color:rgb(86, 107, 128);
     color:rgb(54, 67, 80);
-    padding:5px;
 }
 
-.navbar *{
+.navbar li {
     flex:auto;
     max-width: 180px;
     margin:5px;
     font-size: 25px;
-}
-
-/* NAVIGATION BAR */
-div.navbar *{
     color:rgb(54, 67, 80);
     align-content: center;
     padding-top: 5px;
@@ -86,7 +91,7 @@ div.navbar *{
     border-radius: 20px;
 }
 
-div.navbar *:hover {
+.navbar *:hover {
 color:rgb(204, 226, 248);
 -webkit-transform: scale(1.1); 
 }
