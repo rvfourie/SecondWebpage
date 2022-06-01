@@ -33,6 +33,32 @@ h1,h2,h3,h4,h5,h6 {
 }
 /* TITLE */
 .title {
+    width:100%;
+    height:auto;
+    display: grid;
+    grid-template-columns: auto 350px auto;
+}
+
+.title-left {
+    content:"";
+    background-color:rgb(54, 67, 80);
+    height:50%;
+    top:0;
+    transform:translateY(50%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.title-right {
+    content:"";
+    background-color:rgb(54, 67, 80);
+    height:50%;
+    top:0;
+    transform:translateY(50%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.title-text {
 background-color:rgb(86, 107, 128);
 font-size: 60px;
 font-weight: bold;
@@ -75,7 +101,6 @@ body {
 nav {
     padding:5px;
     background-color:rgb(54, 67, 80);
-    border-radius: 20px;
 
     }
 
@@ -88,7 +113,6 @@ nav {
     background-color:rgb(54, 67, 80);
     background-color:rgb(54, 67, 80);
     justify-content: center;
-    border-radius: 20px;
 }
 
 .navbar li {
@@ -127,12 +151,44 @@ color:rgb(204, 226, 248);
     LIST ?WITH PSUEDO ELEMENTS */
   }
 
+/* IMAGES */
+.top-images {
+    padding:10px;
+    margin:10px;
+    display:inline-grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+}
+#image2 {
+    border-radius: 20px;
+    justify-content: center;
+    width:100%;
+    top:0;
+    transform:translateY(25%);
+    border-spacing: 20px;
+}
+#image2:hover {
+background-color:black;
+}
+
+#image1 {
+    border-radius: 20px;
+    justify-content: center;
+    width:100%;
+}
+#image3 {
+    border-radius: 20px;
+    justify-content: center;
+    width:100%;
+    top:0;
+    transform:translateY(25%);s
+}
+
 /* HOME PAGE GRID */
 .home-container {
     background-color:rgb(54, 67, 80);
     margin: 20px;
     padding: 10px;
-    border-radius: 20px;
    }
 
 .homegrid {
