@@ -196,7 +196,13 @@ color:rgb(204, 226, 248);
     transition: all 300ms ease;
 }
 
-/* HOME PAGE GRID */
+/* REVIEW GRID */
+.review-head {
+    color:rgb(204, 226, 248);
+    font-size: 50px;
+    margin:10px;
+}
+
 .home-container {
     background-color:rgb(54, 67, 80);
     margin: 20px;
@@ -249,4 +255,25 @@ color:rgb(204, 226, 248);
     grid-column-start: 4;
     grid-column-end: 7;
 }
-/* RESPONSIVE TO SCREEN SIZE */
+
+/* TEST PAGE */
+
+.test-inputs {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    border-style: solid;
+    border-width: 3px;
+    width:max-content;
+    text-align: left;
+    padding: 15px;
+    row-gap: 15px;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+
+

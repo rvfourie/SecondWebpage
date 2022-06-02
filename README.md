@@ -3,6 +3,7 @@ This webpage will be expanding on the lessons learnt over the last few months. T
 - More clean and professional visually
 - Tidy title bar
 - Navigation tabs
+- Links to other pages on website
 - Buttons and input fields
 - Responsive to different screen sizes
 - Use of grid/flex boxes to hold content
