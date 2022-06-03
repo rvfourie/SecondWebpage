@@ -275,5 +275,55 @@ label {
     font-weight: bold;
 }
 
+.product-container {
+    background-color:rgb(54, 67, 80);
+    margin: 20px;
+    padding: 10px;
+    max-width: 1000px;
+    justify-content: center;
+    align-content: center;
+}
+
+.product-grid {
+    color:rgb(204, 226, 248);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.product-col-left {
+    display:grid;
+    gap:15px;
+    text-align:right ;
+    justify-content: center;
+    align-content: center;
+    justify-self: right;
+
+  }
+  .product-col-left>h3 {
+    text-align: right;
+    color:rgb(218, 98, 0);
+  }
+
+
+  .product-col-right {
+    display:grid;
+    gap:15px;
+    text-align:left;
+    justify-content: center;
+    align-content: center;
+    justify-self: left;
+  }
+
+  .product-col-right>h3 {
+    text-align: left;
+    color:rgb(218, 98, 0);
+
+ }
+
+
+
 
 

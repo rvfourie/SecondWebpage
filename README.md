@@ -1,5 +1,6 @@
 # SecondWebpage
-This webpage will be expanding on the lessons learnt over the last few months. The first webpage was very basic and was more to experiment with some simple techniques. Features intended to be added on this page: 
+This webpage will be expanding on the lessons learnt over the last few months. The first webpage was very basic and was more to experiment with some simple techniques. Features intended to be added on this page and learning opportunities: 
+
 - More clean and professional visually
 - Tidy title bar
 - Navigation tabs
@@ -10,3 +11,7 @@ This webpage will be expanding on the lessons learnt over the last few months. T
 - Use of Hover effects
 - Use of css pseudo-elements
 - Experiment with clickable icons
+- Learn about copyright-free material and attribution requiesments
+
+Reflection:
+-
