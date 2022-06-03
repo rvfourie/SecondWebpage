@@ -31,6 +31,13 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     justify-content: center;
 }
+
+h1 {
+    color:rgb(204, 226, 248);
+    font-size: 50px;
+    margin:10px;
+}
+s
 /* TITLE */
 .title {
     width:100%;
@@ -197,11 +204,6 @@ color:rgb(204, 226, 248);
 }
 
 /* REVIEW GRID */
-.review-head {
-    color:rgb(204, 226, 248);
-    font-size: 50px;
-    margin:10px;
-}
 
 .home-container {
     background-color:rgb(54, 67, 80);
@@ -278,7 +280,7 @@ label {
 .product-container {
     background-color:rgb(54, 67, 80);
     margin: 20px;
-    padding: 10px;
+    padding: 30px;
     max-width: 1000px;
     justify-content: center;
     align-content: center;
@@ -288,7 +290,7 @@ label {
     color:rgb(204, 226, 248);
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap:10px;
+    gap:30px;
     justify-content: center;
     align-content: center;
 }
@@ -305,6 +307,16 @@ label {
   .product-col-left>h3 {
     text-align: right;
     color:rgb(218, 98, 0);
+    text-decoration: underline;
+  }
+
+  .product-col-left>h3:hover {
+    -webkit-transform: scale(1.2);
+    transform-origin: right;
+    color:rgb(255, 126, 21);
+    transition: all 300ms ease;
+
+
   }
 
 
@@ -320,7 +332,23 @@ label {
   .product-col-right>h3 {
     text-align: left;
     color:rgb(218, 98, 0);
+    text-decoration: underline;
+ }
+ 
+ .product-col-right>h3:hover {
+    -webkit-transform: scale(1.2);
+    transform-origin: left;
+    color:rgb(255, 126, 21);
+    transition: all 300ms ease;
+ }
 
+ .product-grid>img:hover {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    transition: all 300ms ease;
  }
 
 
