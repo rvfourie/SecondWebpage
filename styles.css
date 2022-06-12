@@ -361,17 +361,20 @@ label {
     }
     
     .title {
+        pointer-events: none;
         display: flex;
         flex-direction: column;
         align-self: center;
     }
     .title-text {
-    font-size: 45px;
-    margin-left: 50px;
+        pointer-events: none;
+        font-size: 45px;
+        margin-left: 50px;
     }
     .title-left, .title-right {
-    background-color: var(--lightgrey);
-    display:none;
+        pointer-events: none;
+        background-color: var(--lightgrey);
+        display:none;
     }
 
     nav {
@@ -399,15 +402,13 @@ label {
         line-height: 15px;
     }
     nav a {
-        border:none;
-
         color: var(--offwhite);
         text-decoration: none;
         font-size: 1.2rem;
         text-transform: uppercase;
     }
     nav a:hover {
-        color: var(--orange)
+        color: var(--orange);
     }
     .nav-toggle {
         display: none;
@@ -424,14 +425,12 @@ label {
         display: block;
         background: var(--orange);
         height: 3px;
-        width: 2em;
+        width: 1.7em;
         border-radius: 2px;
         position: relative;
+        z-index: 1;
     }
 
-    .nav-toggle-label span {
-
-    }
 
     .nav-toggle-label span::before,
     .nav-toggle-label span::after {
@@ -440,10 +439,10 @@ label {
     }
 
     .nav-toggle-label span::before {
-        bottom: 8px;
+        bottom: 7px;
     }
     .nav-toggle-label span::after {
-        top: 8px;
+        top: 7px;
     }
 
 
