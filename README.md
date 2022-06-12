@@ -13,7 +13,7 @@ Features intended to be added on this page and learning opportunities:
 - Consideration of Calls To Action / Drawing    attention to certain elements
 - Use of css pseudo-elements
 - Experiment with clickable icons
-- Learn about copyright-free material and attribution requiesments
+- Learn about copyright-free material and attribution requirements
 - Buttons and input fields
 
 

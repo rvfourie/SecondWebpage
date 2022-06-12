@@ -4,8 +4,19 @@ such that when they are added to the webpage
 they will be styled appropriately already,
 for the most part. */
 
+/* SETTING COLOR SCHEME */
+
+:root {
+    --lightgrey: rgb(86, 107, 128);
+    --darkgrey: rgb(54, 67, 80);
+    --offwhite: rgb(204, 226, 248);
+    --orange: rgb(218, 98, 0);
+    --orange2: rgb(255, 126, 21);
+}
+
+
 /* DEFAULT FOR ALL CONTENT */
-*{
+* {
 margin: 0;
 padding: 0;
 list-style: none;
@@ -23,7 +34,7 @@ a {
 }
 
 a:visited {
-    color: rgb(54, 67, 80);
+    /* color: rgb(54, 67, 80); */
   }
 
 /* HEADINGS */
@@ -37,7 +48,7 @@ h1 {
     font-size: 50px;
     margin:10px;
 }
-s
+
 /* TITLE */
 .title {
     width:100%;
@@ -48,16 +59,17 @@ s
 
 .title-left {
     content:"";
-    background-color:rgb(54, 67, 80);
+    background-color: var(--orange);
     height:50%;
     top:0;
     transform:translateY(50%);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
 .title-right {
     content:"";
-    background-color:rgb(54, 67, 80);
+    background-color: var(--orange);
     height:50%;
     top:0;
     transform:translateY(50%);
@@ -72,29 +84,7 @@ font-weight: bold;
 display: inline-block;
 text-align: center;
 color:rgb(204, 226, 248);
-
 }
-/* 
-.title::before, .title::after  {
-content: "";
-height: 50%;
-position:absolute;
-}
-
-.title::before {
-    background-color:rgb(54, 67, 80);
-    z-index: +1;
-    left:0;
-    width:40%;
-}
-
-.title::after{
-    width:50vw;
-    height: 4s0px;
-    background-color:rgb(54, 67, 80);
-    top: 25%;
-    z-index: +1;
-} */
 
 /* BODY */
 body {
@@ -105,61 +95,52 @@ body {
 }
 
 /* NAVIGATION BAR */
-nav {
-    position: sticky;
-    top:0;
-    z-index:+5;
-    padding:5px;
-    background-color:rgb(54, 67, 80);
+@media only screen and (min-width: 400px) {
 
+    nav {
+        position: sticky;
+        top:0;
+        z-index:+5;
+        padding:5px;
+        background-color:rgb(54, 67, 80);
+        }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color:rgb(54, 67, 80);
+        background-color:rgb(54, 67, 80);
+        background-color:rgb(54, 67, 80);
+        background-color:rgb(54, 67, 80);
+        justify-content: center;
     }
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color:rgb(54, 67, 80);
-    background-color:rgb(54, 67, 80);
-    background-color:rgb(54, 67, 80);
-    background-color:rgb(54, 67, 80);
-    justify-content: center;
-}
-
-.navbar li {
-    flex:auto;
-    max-width: 170px;
-    margin:5px;
-    font-size: 25px;
-    color:rgb(54, 67, 80);
-    align-content: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-image: radial-gradient(rgb(204, 226, 248),rgb(110, 132, 154));
-    width:fit-content;
-    height:fit-content;
-    border-style: solid;
-    border-color: rgb(204, 226, 248);
-    border-radius: 20px;
-}
-
-.navbar *:hover {
-color:rgb(204, 226, 248);
--webkit-transform: scale(1.1); 
-}
-
-/* RESPONSIVE FOR SMALL SCREEN */
-@media only screen and (max-width: 400px) {
-    .title {
-    font-size:45px;
-    }
     .navbar li {
-        display:none;
+        flex:auto;
+        max-width: 170px;
+        margin:5px;
+        font-size: 25px;
+        color:rgb(54, 67, 80);
+        align-content: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-image: radial-gradient(rgb(204, 226, 248),rgb(110, 132, 154));
+        width:fit-content;
+        height:fit-content;
+        border-style: solid;
+        border-color: rgb(204, 226, 248);
+        border-radius: 20px;
     }
-    /* NEED TO ADD DROP-DOWN
-    LIST ?WITH PSUEDO ELEMENTS */
-  }
+
+    .navbar *:hover {
+    color:rgb(204, 226, 248);
+    -webkit-transform: scale(1.1); 
+    }
+
+}
 
 /* IMAGES */
 .top-images {
@@ -206,14 +187,13 @@ color:rgb(204, 226, 248);
 /* REVIEW GRID */
 
 .home-container {
-    background-color:rgb(54, 67, 80);
+    background-color:var(--darkgrey);
     margin: 20px;
     padding: 10px;
    }
 
 .homegrid {
     display: grid;
-    justify-content: center;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
@@ -223,7 +203,7 @@ color:rgb(204, 226, 248);
     flex-direction: column;
     /* margin: 10px; */
     padding:5px;
-    background-image: radial-gradient(rgb(204, 226, 248),rgb(110, 132, 154));
+    background-image: radial-gradient(var(--offwhite),var(--lightgrey));
     border-style: solid;
     border-color: rgb(204, 226, 248);
     border-radius: 20px;
@@ -279,11 +259,12 @@ label {
 
 .product-container {
     background-color:rgb(54, 67, 80);
-    margin: 20px;
+    margin: auto;
     padding: 30px;
     max-width: 1000px;
     justify-content: center;
     align-content: center;
+    align-self: center;
 }
 
 .product-grid {
@@ -306,7 +287,7 @@ label {
   }
   .product-col-left>h3 {
     text-align: right;
-    color:rgb(218, 98, 0);
+    color: var(--orange);
     text-decoration: underline;
   }
 
@@ -315,8 +296,6 @@ label {
     transform-origin: right;
     color:rgb(255, 126, 21);
     transition: all 300ms ease;
-
-
   }
 
 
@@ -351,7 +330,146 @@ label {
     transition: all 300ms ease;
  }
 
+ .content-box {
+    background-color:rgb(54, 67, 80);
+    margin: auto;
+    margin-top: 30px;
+    padding: 30px;
+    max-width: 1000px;
+    justify-content: center;
+    align-content: center;
+    color: rgb(204, 226, 248);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+
+/* RESPONSIVE FOR SMALL SCREEN */
+
+@media only screen and (max-width: 400px) {
+    
+    header {
+        color: var(--offwhite);
+        text-align: center;
+        z-index: 999;
+        width: 100%;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .title-text {
+    font-size: 45px;
+    margin-left: 50px;
+    }
+    .title-left, .title-right {
+    background-color: var(--lightgrey);
+    display:none;
+    }
+
+    nav {
+        display:none;
+        color: var(--offwhite);
+        top: 0;
+        text-align: left;
+        left: 0;
+        background-color: var(--darkgrey);
+    }
+
+    nav ul {
+        color: var(--offwhite);
+        text-align: left;
+        margin: 0;
+        list-style: none;
+        justify-content: none;
+    }
+    nav li {
+        color: var(--offwhite);
+        text-align: left;
+        align-content: none;
+        padding: 10px;
+        border:none;
+        line-height: 15px;
+    }
+    nav a {
+        border:none;
+
+        color: var(--offwhite);
+        text-decoration: none;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+    nav a:hover {
+        color: var(--orange)
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .nav-toggle-label {
+        position:fixed;
+        top: 30px;
+        left: 0;
+        margin-left: 10px;
+    }
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: var(--orange);
+        height: 3px;
+        width: 2em;
+        border-radius: 2px;
+        position: relative;
+    }
+
+    .nav-toggle-label span {
+
+    }
+
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: "";
+        position: absolute;
+    }
+
+    .nav-toggle-label span::before {
+        bottom: 8px;
+    }
+    .nav-toggle-label span::after {
+        top: 8px;
+    }
+
+
+    .nav-toggle:checked ~ nav {
+        display: block;
+    }
+
+    .top-images {
+        display:flex;
+        flex-direction: column;
+     }
+
+    #image1, #image2, #image3 {
+        position: relative;
+        margin: auto;
+        transform: none;
+        padding: 10px;
+    }
+
+}
 
 
 
+    /* NEED TO ADD DROP-DOWN
+    LIST ?WITH PSUEDO ELEMENTS */
 
+    *, *::before, *::after {
+        box-sizing: border-box
+    }
