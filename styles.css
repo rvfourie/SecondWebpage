@@ -109,7 +109,7 @@ body {
         background-color:rgb(54, 67, 80);
     }
 
-    .navbar::after {
+    /* .navbar::after {
         display: block;
         content:"";
         border: 2px solid red;
@@ -120,7 +120,7 @@ body {
         background: var(--darkgrey);
         transform:translateY(-100px);
         z-index: 6;
-    }
+    } */
 
     .navbar {
         padding: 10px;
